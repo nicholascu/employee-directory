@@ -77,7 +77,7 @@
           <div class='panel-body'>
           <div class="container">
                 <div class="row" >
-                  <div ng-repeat="employee in employees | filter: query track by employee.email">
+                  <div ng-repeat="employee in employees | orderBy:'name'  track by employee.email | filter:query">
                     <div class="col-xs-18 col-sm-6 col-md-3">
                       <div class="thumbnail">
                         <img src="http://placehold.it/500x250/EEE">
