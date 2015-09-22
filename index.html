@@ -77,17 +77,21 @@
           <div class='panel-body'>
           <div class="container">
                 <div class="row" >
-                  <div ng-repeat="employee in employees | orderBy:'name' | filter:query">
-                    <div class="col-xs-18 col-sm-6 col-md-3">
-                      <div class="thumbnail">
-                        <img src="http://placehold.it/500x250/EEE">
-                          <div class="caption">
-                            <h4>{{employee.name}}</h4>
-                            <p>{{employee.title}}</p>
-                            <p>{{employee.phone}}</p>
-                            <p>{{employee.address}}<br> {{employee.manager}}</p>
-                            <p>{{employee.email}}</p>
-                            <p>{{employee.cost}} <br>{{employee.mail}}</p>
+                <!-- <div ng-repeat="employee in employees | orderBy:'name' | filter:query"> -->
+                <div ng-repeat="employee in employeesInfo | orderBy:'employee.user.display_name' | filter:query" ng-show="employee.user.employee_id">
+                  <div class="col-xs-18 col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="http://www.hirewordpressfreelancer.com/uploads/no_img.jpg">
+                        <div class="caption">
+                          <h4>{{employee.user.employee_id}}</h4>
+                          <h4>{{employee.user.firstname}} {{employee.user.lastname}}</h4>
+                          <p>X{{employee.user.office_phone_extension}}</p>
+                          <p>{{employee.user.title}}</p>
+                          <p>Office: {{employee.user.office_phone_number}}</p>
+                          <p ng-show="employee.user.cell_phone_number">Cell: {{employee.user.cell_phone_number}}</p>
+                          <p>{{employee.user.office_name}}<br> Mangager:{{employee.manager}}</p>
+                          <p>{{employee.user.mail}}</p>
+                          <p>{{employee.cost}} <br>{{employee.mail}}</p>
                             <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" role="button">Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a>
                         </div>
                       </div>
@@ -114,6 +118,9 @@
       <!-- Directives -->
     <script src="js/directives/employeeInfo.js"></script>
   
+      <!-- Services -->
+    <script src="js/directives/employeeInfo.js"></script>
+<!--   <%= javascript_include_tag 'angular/services/employees.js' %> -->
   </body>
 </html>
 

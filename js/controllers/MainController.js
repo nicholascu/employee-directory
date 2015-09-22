@@ -1,7 +1,7 @@
-app.controller('MainController', ['$scope', function($scope) {
-  // employees.success(function(data) {
-  //   $scope.employees = data;
-  // });
+app.controller('MainController', ['$scope', 'employees', function($scope, employees) {
+	employees.success(function(data) { 
+	    $scope.employeesInfo = data; 
+	  });
 	$scope.employees = [
 		{
 			name: "Nicholas Cu",
