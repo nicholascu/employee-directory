@@ -39,4 +39,7 @@
 
 .thumbnail{
   margin-top: 2em; 
+  max-height: 430px;
+  min-height: 430px;
+  margin-bottom: 0;
 }
