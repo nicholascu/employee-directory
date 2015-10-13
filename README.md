@@ -1,2 +1,2 @@
 # employee-directory
-This is a basic employe directory Angular App.
+This is a basic employee directory Angular App.
