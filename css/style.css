@@ -6,7 +6,7 @@
 .search-box input{
   margin-top: -.9em;
   border-top-right-radius: 0;
-  border-bottom-right-radius: 0; 
+  border-bottom-right-radius: 0;
 }
 
 .search-box button{
@@ -15,12 +15,12 @@
   color: #345DBB;
   border: 1px solid;
   border-top-left-radius: 0;
-  border-bottom-left-radius: 0; 
+  border-bottom-left-radius: 0;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
 
 .lead{
-  
+
 }
 
 .panel-heading{
@@ -38,5 +38,17 @@
 }
 
 .thumbnail{
-  margin-top: 2em; 
+  margin-top: 2em;
+}
+
+.new-ad {
+  margin-top: 3em;
+}
+
+.ad-dashboard {
+  margin-top: 3em;
+}
+
+.tab-pane {
+  padding-top: 1.5em;
 }

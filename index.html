@@ -78,16 +78,18 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="well">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <div class="col-sm-2">
-                          <img class="img-thumbnail" src="img/magnum.png">
-                        </div>
-                        <div class="col-sm-10">
-                          <h3><a href="#">It's Movember at PennyMac. Free moustache rides all month!</a></h3>
-                          <p class="lead">The thing about moustaches is they grow on you. And all November at PennyMac all facial-hair capable people are packing on the stubble to raise money for cancer.  Or against cancer or something.</p>
-                          <p><a href="#">Get the Details</a></p>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="col-sm-2">
+                            <img class="img-thumbnail" src="img/magnum.png">
+                          </div>
+                          <div class="col-sm-10">
+                            <h3><a href="#">It's Movember at PennyMac. Free moustache rides all month!</a></h3>
+                            <p class="lead">The thing about moustaches is they grow on you. And all November at PennyMac facial-hair capable people are packing on the stubble to raise money for cancer.  Or against cancer, or something.</p>
+                            <p class="small">Ads by <a href="ads.html">PennyAds</a></p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -100,7 +102,7 @@
                   <div ng-repeat="employee in employees | orderBy:'name' | filter:query">
                     <div class="col-xs-18 col-sm-6 col-md-3">
                       <div class="thumbnail">
-                        <img src="http://placehold.it/500x250/EEE">
+                        <img src="http://placehold.it/500x500/EEE">
                           <div class="caption">
                             <h4>{{employee.name}}</h4>
                             <p>{{employee.title}}</p>
